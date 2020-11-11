@@ -7,6 +7,13 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 97vh;
+}
+
 .App {
   display: flex;
   justify-content: center;
@@ -20,24 +27,38 @@ body {
   margin-top: 25px;
   padding: 30px;
   display: flex;
+
+  .score-container {
+    background-color: white;
+    border-radius: 10px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+    .score-text {
+      color: hsl(229, 64%, 46%);
+      letter-spacing: 3px;
+    }
+
+    .score {
+      color: hsl(217, 16%, 45%);
+      font-size: 4rem;
+    }
+  }
 }
 
-.score-container {
-  background-color: white;
-  border-radius: 10px;
-  width: 15%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-}
+.footer-container {
+  border: 2px solid hsl(217, 16%, 45%);
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  align-self: flex-end;
+  margin-right: 20px;
 
-.score-text {
-  color: hsl(229, 64%, 46%);
-  letter-spacing: 3px;
-}
-
-.score {
-  color: hsl(217, 16%, 45%);
-  font-size: 4rem;
+  .rules-text {
+    color: white;
+    text-align: center;
+  }
 }

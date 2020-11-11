@@ -3,6 +3,7 @@ import './styles/index.scss'
 
 function App() {
   return (
+  <div className="wrapper">
     <div className="App" >
       <div className="header-container">
         <Logo />
@@ -11,7 +12,12 @@ function App() {
           <h2 className="score">12</h2>
         </div>
       </div>
+      
     </div>
+    <div className='footer-container'>
+      <h2 className="rules-text">RULES</h2>
+    </div>
+  </div>
   );
 }
 
