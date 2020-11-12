@@ -1,5 +1,5 @@
 import {ReactComponent as Logo} from './assets/images/logo.svg';
-import './styles/index.scss'
+import Start from './components/Start'
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
           <h2 className="score">12</h2>
         </div>
       </div>
-      
+      <Start />
     </div>
     <div className='footer-container'>
       <h2 className="rules-text">RULES</h2>
