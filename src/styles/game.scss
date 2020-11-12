@@ -44,3 +44,32 @@
 .triangle {
     margin-left: 50px;
 }
+
+.rules-modal {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 175px;
+    left: 600px;
+    z-index: 1000;
+
+    .rules-modal-title {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .rules-title {
+        color: hsl(217, 16%, 45%);
+        font-size: 2.7rem;
+        margin-bottom: 30px;
+    }
+    // .close {
+
+    // }
+}
