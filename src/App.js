@@ -20,7 +20,7 @@ function App() {
                         <h2 className="score">12</h2>
                     </div>
                 </div>
-                {showModal && <RulesModal />}
+                {showModal && <RulesModal setShowModal={setShowModal} />}
                 <Start />
             </div>
             <div className="footer-container">

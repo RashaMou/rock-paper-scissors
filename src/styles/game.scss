@@ -57,6 +57,20 @@
     top: 175px;
     left: 600px;
     z-index: 1000;
+    animation: modalSlide 0.5s ease-out forwards;
+    transform: translateY(50%);
+
+    @keyframes modalSlide {
+        from {
+            transform: translateY(50%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
 
     .rules-modal-title {
         display: flex;
@@ -69,7 +83,7 @@
         font-size: 2.7rem;
         margin-bottom: 30px;
     }
-    // .close {
-
-    // }
+    .close:hover {
+        cursor: pointer;
+    }
 }
