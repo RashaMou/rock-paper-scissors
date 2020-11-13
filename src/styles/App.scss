@@ -53,8 +53,8 @@ body {
 .footer-container {
     border: 2px solid hsl(217, 16%, 45%);
     width: 100px;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 12px 17px;
+    border-radius: 10px;
     align-self: flex-end;
     margin-right: 20px;
 
@@ -65,5 +65,6 @@ body {
     .rules-text {
         color: white;
         text-align: center;
+        letter-spacing: 5px;
     }
 }

@@ -21,6 +21,8 @@ const rps = (userChoice, computerChoice, randomNum) => {
     };
 
     console.log(resultMap[userResult]);
+
+    //TODO: Add score, move computer choice to this function, return an object with all the info we need
 };
 
 export default rps;

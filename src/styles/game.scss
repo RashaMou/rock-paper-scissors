@@ -13,16 +13,16 @@
 .top-icon-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     margin-top: -50px;
-    width: 400px;
+    width: 600px;
 }
 
 .icon-container {
     background-color: white;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,16 +32,16 @@
 }
 
 .paper {
-    border: 15px solid hsl(230, 89%, 62%);
+    border: 25px solid hsl(230, 89%, 62%);
     margin-right: 80px;
 }
 
 .scissors {
-    border: 15px solid hsl(39, 89%, 49%);
+    border: 25px solid hsl(39, 89%, 49%);
 }
 
 .rock {
-    border: 15px solid hsl(349, 71%, 52%);
+    border: 25px solid hsl(349, 71%, 52%);
 }
 
 .triangle {
