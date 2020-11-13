@@ -15,14 +15,14 @@
     justify-content: space-between;
     margin-bottom: 50px;
     margin-top: -50px;
-    width: 600px;
+    width: 500px;
 }
 
 .icon-container {
     background-color: white;
     border-radius: 50%;
-    width: 180px;
-    height: 180px;
+    width: 130px;
+    height: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,16 +33,15 @@
 }
 
 .paper {
-    border: 25px solid hsl(230, 89%, 62%);
-    margin-right: 80px;
+    border: 20px solid hsl(230, 89%, 62%);
 }
 
 .scissors {
-    border: 25px solid hsl(39, 89%, 49%);
+    border: 20px solid hsl(39, 89%, 49%);
 }
 
 .rock {
-    border: 25px solid hsl(349, 71%, 52%);
+    border: 20px solid hsl(349, 71%, 52%);
 }
 
 .triangle {
