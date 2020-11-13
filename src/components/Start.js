@@ -32,8 +32,12 @@ const Start = () => {
                         />
                     </div>
                 </div>
+
                 <div className="icon-container rock">
-                    <IconRock onClick={() => handleSelection("rock")} />
+                    <IconRock
+                        className="rock-svg"
+                        onClick={() => handleSelection("rock")}
+                    />
                 </div>
             </div>
         </div>
