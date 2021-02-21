@@ -1,17 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { ReactComponent as Triangle } from "../assets/images/bg-triangle.svg";
 import { ReactComponent as IconPaper } from "../assets/images/icon-paper.svg";
 import { ReactComponent as IconRock } from "../assets/images/icon-rock.svg";
 import { ReactComponent as IconScissors } from "../assets/images/icon-scissors.svg";
-import { calculateScore, game } from "../game";
+import { GameContext } from "../contexts/GameContext";
 
-const Start = ({ score, setScore }) => {
-  const [selection, setSelection] = React.useState("");
-  const handleSelection = (input) => {
-    setSelection(input);
-    const { userResult, userChoice, computerChoice, result } = game(input);
-    setScore(() => calculateScore(score, userResult));
-  };
+const Start = () => {
+  const { handleSelection } = useContext(GameContext);
 
   return (
     <div className="main-start">

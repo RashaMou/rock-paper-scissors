@@ -1,11 +1,10 @@
 import React from "react";
-import { ReactComponent as Logo } from "./assets/images/logo.svg";
+import Header from "./components/Header";
 import RulesModal from "./components/RulesModal";
 import Start from "./components/Start";
 
 function App() {
   const [showModal, setShowModal] = React.useState(false);
-  const [score, setScore] = React.useState(0);
 
   const handleShowModal = () => {
     setShowModal(!showModal);
@@ -14,15 +13,9 @@ function App() {
   return (
     <div className="wrapper">
       <div className="App">
-        <div className="header-container">
-          <Logo />
-          <div className="score-container">
-            <h2 className="score-text">SCORE</h2>
-            <h2 className="score">{score}</h2>
-          </div>
-        </div>
+        <Header />
         {showModal && <RulesModal setShowModal={setShowModal} />}
-        <Start setScore={setScore} score={score} />
+        <Start />
       </div>
       <div className="footer-container">
         <h2 className="rules-text" onClick={handleShowModal}>
